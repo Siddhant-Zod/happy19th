@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>P.I.V.O.T</title>
+    <link rel="shortcut icon" type="icon/ico" href="icon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <style>
+      
+        
+    </style>
+    </head>
+<body id="top">
+    <header>
+        <h2><a href="MinaP.png" target="_blank"><img src="MinaP.png" alt="" width="90" height="90"></a></h2>
+        <nav>
+        <ul>
+            <li><a href="#hero">Top</a></li>
+            <li><a href="#about">18 Pages...Front &#38; Back</a></li>
+            <li><a href="#she-said">Wishes</a></li>
+        </ul>
+        </nav>
+    </header>
+    <!-- *************************** -->
+    <div id="hero">
+    <div class="background-image"></div>
+    <h1 class="ml8">
+  <span class="letters-container">
+    <span class="letters letters-left"></span>
+    <span class="letters bang">Hi Pramegh!</span>
+  </span>
+  <span class="circle circle-white"></span>
+  <span class="circle circle-dark"></span>
+  <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    
+<script language="Javascript"> 
+        anime.timeline({loop: true})
+  .add({
+    targets: '.ml8 .circle-white',
+    scale: [0, 5],
+    opacity: [1, 0],
+    easing: "easeInOutExpo",
+    rotateZ: 360,
+    duration: 1100
+  }).add({
+    targets: '.ml8 .circle-container',
+    scale: [0, 2],
+    duration: 1100,
+    easing: "easeInOutExpo",
+    offset: '-=1000'
+  }).add({
+    targets: '.ml8 .circle-dark',
+    scale: [0, 2],
+    opacity:0.55,
+    duration: 1100,
+    easing: "easeOutExpo",
+    offset: '-=600'
+  }).add({
+    targets: '.ml8 .letters-left',
+    scale: [0, 1],
+    duration: 1200,
+    offset: '-=550'
+  }).add({
+    targets: '.ml8 .bang',
+    scale: [0, 1],
+    rotateZ: [45, 15],
+    duration: 1200,
+    offset: '-=1000'
+  }).add({
+    targets: '.ml8',
+    opacity: 1,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1400
+  });
+
+anime({
+  targets: '.ml8 .circle-dark-dashed',
+  rotateZ: 360,
+  duration: 8000,
+  easing: "linear",
+  loop: true
+});
+</script>
+   
+        
+    <h1 class="ml10">
+  <span class="text-wrapper">
+    <span class="letters">It's the year 2020.Are you still enjoying being 18?</span>
+  </span>
+</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>      
+<script language="Javascript">
+        
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml10 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml10 .letter',
+    rotateY: [-90, 0],
+    duration: 1300,
+    delay: (el, i) => 45 * i
+  }).add({
+    targets: '.ml10',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });     
+</script>
+        </div>
+    
+    <!-- *************************** -->
+    
+    <div id="about">
+    <h1 class="title">
+  <span class="letters letters-1">18 Pages</span>
+  <span class="letters letters-2">Front &#38; Back!</span>
+  <span class="letters letters-3">	&#128518;</span>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                <script language="Javascript">
+        
+        
+        var title = {};
+title.opacityIn = [0,1];
+title.scaleIn = [0.2, 1];
+title.scaleOut = 3;
+title.durationIn = 1200;
+title.durationOut = 1100;
+title.delay = 500;
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.title .letters-1',
+    opacity: title.opacityIn,
+    scale: title.scaleIn,
+    duration: title.durationIn
+  }).add({
+    targets: '.title .letters-1',
+    opacity: 0,
+    scale: title.scaleOut,
+    duration: title.durationOut,
+    easing: "easeInExpo",
+    delay: title.delay
+  }).add({
+    targets: '.title .letters-2',
+    opacity: title.opacityIn,
+    scale: title.scaleIn,
+    duration: title.durationIn
+  }).add({
+    targets: '.title .letters-2',
+    opacity: 0,
+    scale: title.scaleOut,
+    duration: title.durationOut,
+    easing: "easeInExpo",
+    delay: title.delay
+  }).add({
+    targets: '.title .letters-3',
+    opacity: title.opacityIn,
+    scale: title.scaleIn,
+    duration: title.durationIn
+  }).add({
+    targets: '.title .letters-3',
+    opacity: 0,
+    scale: title.scaleOut,
+    duration: title.durationOut,
+    easing: "easeInExpo",
+    delay: title.delay
+  }).add({
+    targets: '.title',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
+        </script></h1>
+        <hr><hr>
+        <img src="Pram12.png" height="800" width="800" alt="thumbs up" class="about-img">
+        <hr><hr>
+       <div class="about-bio"> <p>Hello Mr. Hopeless,Awkward and Desperate for love,
+                 </p><br/>
+<p>The one who knows scarcasim…. hehehe…. but sarcasm is not life.
+             </p><br/>
+<p>Me khana kha rahi hoo.. Sabko ladki jaise bolne ki aadat laga di..Sabko LOL ki aadat lagai.. fir ab toh deepal bhi bhada bhada karne lag gayi….bhada!!!</p><br/>
+<p>Haan na… Kitni aadatein lagvayega….. bhada!!.. Ooops.. XD
+                                       </p><br/>
+<p>Omg!!! Someone really loves shit, Shit is love…. Hahaha..
+                                  </p><br/>
+<p>Teoh hi Teoh….Lol…</p><br/>
+<p>Tere naam style …Lol…                          </p><br/>
+<p>Saste mein metro se jana… a no no no no..</p><br/>
+<p>2000 ki taxi lena… a yes yes yes yes yes….</p><br/>
+<p>Metro se jaya karo bhaiyaa, kitne paise kharcha karoge…. abba ye tu kaise bhool sakta…huh???
+                                                               </p><br/>
+<p>Kasha haaye? Hasat raha, teri smile maar dalti sabko…</p><br/>
+           <img src="meme02.jpeg" height="500" width="500" alt="thumbs up">
+<p>Oh yeah… truu that…</p><br/>
+<p>          </p><br/>
+<p>Famous log, school chodke jaane ke baad bhi sabko yaad rehta tu….TALONTT!!!</p><br/>
+<p>            </p><br/>
+<p>Ye lo.. ab randi rona mat shuru karna….</p><br/>
+<p>                            </p><br/>
+<p>I am back from dead, DEAD INSIDE ….muze VD hua hai but seriously... Thomas has never seen such bullshit before!!!</p>
+<p>                                       </p><br/>
+<p>Muze redbull mangta hai! Koi itna redbull Kaise pi sakta?</p><br/>
+<p>P.S.- Don’t do it !!!!!!!!!! </p><br/>
+<p>                                   </p><br/>
+<p>Muze girlfriend chahiye …kisne bola muze chahiye ….but muze chahiye…..muze gf nahi chahiye….mera koi carash nahi….yaar ek carash hona…. STOP!! Stop the madness!!!</p><br/>
+<p>Kitni ladkiyon ko tu pasand hai, like seriously, how many girls like you? Do you even know that… huh????</p>
+<p>Ummmm( -3)...lol…the rest love you… hehehe..</p><br/>
+           <img src="meme04.jpeg" height="500" width="500" alt="thumbs up">
+<p>Aisi bohot sari cheezein hai jinse tu yaad aata sabko. You are a really special and unique(weird XD) personality….</p><br/><p>Thanks man... tu nahi hota toh shayad itna maza nahi aata Roorkee mein….</p><br/><p>Happy Birthday Don!!! Happy 19th!!!</p><br/> 
+<p>It’s difficult to describe you in words. There are many memories we all had and are going to have with you. There will be ups and downs, there will be teohs.. but we all are together in it. You know what, tu sachmein bohot achcha hai (yeh batane ki zaroorat nahi thi but well,yeahh). You are always there whenever someone needs help, you are able to understand us. But we all have to improve and that we all are definitely going to do. We all love you …but unfortunately you only love shit.
+Tuze yaad hai voh umm ruk tuze nahi yaad hoga …but yaad hoga ..uss din Ayushi ke photos churane ke vakt chivda mat de inko voh hamara hai… Janhavi jab giri thi escalator se tab use bola dhyan se chal aur de saman muze aur fir khud fisla tha.
+Kitna room pe baithega re… yaad hai yaad hai Shiru Café wale log ghar jaa rahe the, un sab ke sath humne photo kheecha tha …issiliye bol rahe bahar nikalte jaa aur bahar nikle toh khelte jaa… yaad hai architecture building ke terrace pe ek baar lapan chupan khele the tab sab chupne gaye the… par tu….tu paagalon samaan baitha tha ek hi jagha pe… bhada…  Haa but abhi tu badal gaya hai...(Sahil doubts that…XD)</p><br/>
+<p>Wait wait... wasn’t that.. “move your stupid ass bitch”….LMFAO!!!! kya bola tha yaaarrr… maja hi aa gaya tha…
+Aur aur aur haaa...New Year apan sab ne 12 ki jagha 2 baje celebrate kiya tha……. Jaldi jaldi tayar hote jao…<br/><img src="Meme01.jpeg" height="500" width="500" alt="thumbs up"><br/> <b>itna kya makeup karna re…</b></p><br/>
+<p>Bey…  Vedant ke room pe...Ojus ke room pe...Tidke ke room pe... aur sabse zada tere room pe.. kitni zada bakchodi ki hai bey apan ne… A aur AX me badminton… vo mess ka bekar khana(though not worth remembering)… vo kamre me GPL… vo tapri ki Maggie aur poha… vo khane ke baad C block ke lawn me baithna… lol… haa thodi padhai bhi karna…</p><br/>
+<p>Chii be… idhar dard hota hai… idhar… jab yaad aata hai ki ab sabke hostels badalne wale hai… </p><br/>  
+        <p>Old Kasturba me raat ko jana.., Ganga Canal tak cycling, Students Club ka foosball, Architecture building ke terrace par khelna.. second floor ke projector par movie.. first floor par project padhai aur celebrations karna … aur thak jane ke baad ground floor ke sofa par soo jana.. , Jawahar ki canteen mein chapos, Govind bhawan me Yuno banai , Hotel Tamarind ke dinners, Mussoorie ki vo best yaadein, Sarojini ke samne ki raatein, Main Building ke samne ki, CCD ki bakchodi, Civil Lines mein shopping, Library mein timepass, MAC, SAC….</p><br/>
+           
+<p>ABBA sabhi jagah masti ki hai apan ne...</p><br/>
+<p>Voh chod Train mein bhi epic masti ki hai …lol</p><br/>
+<img src="meme05.jpeg" height="500" width="500" alt="thumbs up">
+<p>Ye sab yaad kar… aur hass… HASSS saale!!</p><br/>
+<p>Rula diya na???      XD</p><br/>
+   <p>Coz, really, yahi baatein toh baadmein yaad aayegi… </p><br/>
+ <p>In the end, memories are everything we have…</p><br/>
+
+<p>Oye maje kar… ghar pe family ke saath birthday manaa.. aur cake kaatte wakt hame yaad karna.. aa toh nahi sakte … but we all are there with you... clapping our hands… singing the birthday song… and celebrating yet another year of you with joy and prosperity and fun… XD...     Enjoy kar…</p><br/>
+
+
+<p>And wait, stay safe, stay healthy aur ghar pe reh because
+                                                                                  </p><br/>
+<p>Inside gooood,</p><br/>
+<p>        Outside baaaaaaad…  XD</p><br/>
+
+        <p>&nbsp;</p>
+    </div> 
+    </div>
+
+    <!--****************************-->
+
+    
+        <div id="she-said">
+        <h3 class="title">That's what she said.</h3>
+       
+        <p class="portrait"><a href="Parth-Bisen.mp4" target="_blank"> <img src="Parth.jpeg" alt="Parth Bisen" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Omaewa Mou Shindeiru.&rdquo;</p></i>
+        <p class="author">&mdash;Parth Bisen </p>
+        
+        <p class="portrait"><a href="Janhavi-Tarale.mp4" target="_blank"><img src="Janhavi.jpeg" alt="Janhavi Tarale" class="portrait-photos" height="170" width="170" ></a></p>
+        <i><p class="quote">&ldquo;Jaldi jaldi milte hai...TAB TAK MAJE KAR&rdquo;</p></i>
+        <p class="author">&mdash; Janhavi Tarale </p>
+        
+        
+        <p class="portrait"><a href="Ojus-Thool.mp4" target="_blank"><img src="Ojus.jpeg" alt="Ojus Thool" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;GPL nahi hongi.&rdquo;</p></i>
+        <p class="author">&mdash;Ojus Thool </p>
+        
+        <p class="portrait"><a href="Prashik-Somkuwar.mp4" target="_blank"><img src="Prashik.jpeg" alt="Prashik Somkuwar" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Happy Birthday big guy!.&rdquo;</p></i>
+        <p class="author">&mdash; Prashik Somkuwar </p>
+        
+        <p class="portrait"><a href="Aditya-Tidke.mp4" target="_blank"><img src="Aditya.jpeg" alt="Aditya Tidke" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Oj ki baate nahi sunna ,pura pekhraha hai wo. Teri gpl hogi aur wallet bhi khali hoga.&rdquo;</p></i>
+        <p class="author">&mdash; Aditya Tidke </p>
+        
+        <p class="portrait"><a href="Gaurav-Wasnik.mp4" target="_blank"><img src="Gaurav.jpeg" alt="Gaurav Wasnik" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;You Rock!.&rdquo;</p></i>
+        <p class="author">&mdash; Gaurav Wasnik </p>
+        
+        <p class="portrait"><a href="Alen-Anjo.mp4" target="_blank"><img src="Alen.jpeg" alt="Alen Anjo" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Happy Birthday Man!.&rdquo;</p></i>
+        <p class="author">&mdash; Alen Anjo </p>
+        
+        <p class="portrait"><a href="Dikshita-Kurelli.mp4" target="_blank"><img src="Dikshitha.jpeg" alt="Dikshitha Kurelli" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Really excited to meet you.&rdquo;</p></i>
+        <p class="author">&mdash;  Kurelli Dikshitha </p>
+        
+        <p class="portrait"><a href="Janhavi-Mohod.mp4" target="_blank"><img src="Janhavi-Mohod.jpeg" alt="Janhavi Mohod" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Tere smile ko kabhi chehre se hatne mat de.&rdquo;</p></i>
+        <p class="author">&mdash; Janhavi Mohod </p>
+        
+        <p class="portrait"><a href="Vedant-Meshram.mp4" target="_blank"><img src="Vedant.jpeg" alt="Vedant Meshram" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Kyuki tu Dil ka boht achcha hai.&rdquo;</p></i>
+        <p class="author">&mdash; Vedant Meshram </p>
+        
+        <p class="portrait"><a href="Deepal-Tiwari.mp4" target="_blank"><img src="Deepal.jpeg" alt="Deepal Tiwari" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Happy Birthday BHADA.TeeHee.&rdquo;</p></i>
+        <p class="author">&mdash; Deepal Tiwari </p>
+        
+        <p class="portrait"><a href="Sahil-Gaikwad.mp4" target="_blank"><img src="Sahil.jpeg" alt="Sahil Gaikwad" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Aee hass re halkat.. hass!!.&rdquo;</p></i>
+        <p class="author">&mdash; Sahil Gaikwad </p>
+        
+        <p class="portrait"><a href="Sanuj-Shende.mp4" target="_blank"><img src="Sanuj.jpeg" alt="Sanuj Shende" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Enjoy kar...STAY SAFE, STAYFREE.&rdquo;</p></i>
+        <p class="author">&mdash; Sanuj Shende </p>
+            
+        <p class="portrait"><a href="Jitesh-Jain.mp4" target="_blank"><img src="Jitesh.jpeg" alt="Jitesh Jain" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Mujhe pata hai tu hai : Hopeless, awkward and desperate for love!...Sabka aashirvaad tujhe milega bhau...abhi janmdin ka jashn manao!&rdquo;</p></i>
+        <p class="author">&mdash; Jitesh Jain </p>
+            
+            <p class="portrait"><a href="Ayushi-Ambilkar.mp4" target="_blank"><img src="Ayushi.jpeg" alt="Ayushi Ambilkar" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Tujhe lagta tu mere itne quareeb hai???&rdquo;</p></i>
+        <p class="author">&mdash; Ayushi Ambilkar</p>
+            
+            <p class="portrait"><a href="Aishwarya-Nipane.mp4" target="_blank"><img src="Aishwarya.jpeg" alt="Aishwarya Nipane" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;It has been a while.&rdquo;</p></i>
+        <p class="author">&mdash; Aishwarya Nipane </p>
+            
+            <p class="portrait"><a href="Ayushman-Tripathy.mp4" target="_blank"><img src="Ayushman.jpeg" alt="Ayushman Tripathy" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;College life ke kuch dost jindagi ke bahat important hisse ban jate hain. Boss aap wo dost ho jise kabhi koi nahi khona chahega, cause you are truly wonderful. Par ham itne nahi hain, GPL zaroor lenge.&rdquo;</p></i>
+        <p class="author">&mdash; Ayushman Tripathy</p>
+             
+        <p class="portrait"><a href="Nishitha-Gowda.mp4" target="_blank"><img src="Nishitha.jpeg" alt="Nishitha Gowda" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Blessed to have you as a friend.HAPPY BIRTHDAY.&rdquo;</p></i>
+        <p class="author">&mdash; Nishitha Gowda </p>
+            
+        <p class="portrait"><a href="Tejas-Upase.mp4" target="_blank"><img src="Tejas.jpeg" alt="Tejas Upase" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;You da Best!!&rdquo;</p></i>
+        <p class="author">&mdash; Tejas Upase </p>
+            
+        <p class="portrait"><a href="Siddhant-Zod.mp4" target="_blank"><img src="Siddhant.jpeg" alt="Siddhant Zod" class="portrait-photos" height="170" width="170"></a></p>
+        <i><p class="quote">&ldquo;Still younger than some buildings.&rdquo;</p></i>
+        <p class="author">&mdash; Siddhant Zod </p>
+            
+            
+            
+            
+    </div>
+     <!--****************************-->
+  
+    
+     <div id="bottom" class="bottom">
+    <footer>
+        <h1>Happy Birthday Pramegh!</h1>
+        <h1>&copy; 2020</h1>
+    </footer>
+         </div>
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {e.preventDefault();
+
+		var target = this.hash;
+		var $target = $(target);
+
+		$('html, body').stop().animate({
+	        'scrollTop': $target.offset().top-160
+		}, 900, 'swing', function () {
+	        window.location.hash = target-160;
+		});
+	       });
+});
+</script>
+    </body>
+</html>
